@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Paws & Hearts Adoption</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-paw"></i> Paws & Hearts
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="adoption.html">Adopt</a></li>
+                    <li><a href="care.html">Care Info</a></li>
+                    <li><a href="media.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger" id="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <h1>Happy Tails Gallery</h1>
+        <p class="section-desc">See our success stories and current residents in action. Click on an image to view it full size.</p>
+
+        <!-- Interactive Image Gallery -->
+        <section class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://picsum.photos/id/237/600/600" alt="Black dog puppy" class="gallery-img">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://picsum.photos/id/433/600/600" alt="Bear hug" class="gallery-img">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://picsum.photos/id/582/600/600" alt="Wolf in woods" class="gallery-img">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://picsum.photos/id/593/600/600" alt="Tiger toy" class="gallery-img">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://picsum.photos/id/659/600/600" alt="Husky dog" class="gallery-img">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://picsum.photos/id/718/600/600" alt="Wolf dog looking up" class="gallery-img">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="video-section">
+            <h2>A Day in the Life at the Shelter</h2>
+            <div class="video-container">
+                <!-- Using a placeholder iframe for video requirement -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5Peo-ivmupE?si=placeholder" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p>Watch how our volunteers interact with the animals to prepare them for their forever homes.</p>
+        </section>
+
+        <!-- Image Modal (Hidden by default) -->
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImg">
+            <div id="caption"></div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>Paws & Hearts</h4>
+                <p>Connecting pets with people since 2015.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="adoption.html">Available Pets</a></li>
+                    <li><a href="contact.html">Volunteer</a></li>
+                    <li><a href="care.html">Care Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>123 Puppy Lane, Pet City</p>
+                <p>Email: hello@pawsandhearts.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Paws & Hearts. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
