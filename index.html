@@ -3,115 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Paws & Hearts Adoption</title>
+    <title>Paws & Hearts | Pet Adoption Center</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for Icons (Allowed library context) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-<link rel="stylesheet" href="/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Cursor Trail for human touch -->
+    <div class="cursor-trail"></div>
 
-    <!-- Header & Navigation -->
-    <header>
-        <div class="container header-content">
+    <header class="header">
+        <div class="container">
             <div class="logo">
-                <i class="fas fa-paw"></i> Paws & Hearts
+                <h1 class="handwritten-logo">Paws & Hearts</h1>
+                <p class="tagline">Where every tail has a tale ❤️</p>
             </div>
-            <nav>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="adoption.html">Adopt</a></li>
-                    <li><a href="care.html">Care Info</a></li>
-                    <li><a href="media.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="burger" id="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
+            <nav class="nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#pets" class="nav-link">Available Pets</a>
+                <a href="#adopt" class="nav-link">Adoption Process</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-text">
-            <h1>Find Your Fur-ever Friend</h1>
-            <p>Compassionate care, responsible adoption, and a lifetime of happiness.</p>
-            <a href="adoption.html" class="btn btn-primary">Adopt Today</a>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Give a Pet a Loving Home</h2>
+            <p>Every pet deserves a second chance at happiness. Find your perfect companion today!</p>
+            <button class="cta-button" onclick="scrollToSection('pets')">Meet Our Pets</button>
+        </div>
+        <div class="floating-paws">
+            <span>🐾</span>
+            <span>🐾</span>
+            <span>🐾</span>
         </div>
     </section>
 
-    <!-- Business Purpose Section -->
-    <main class="container">
-        <section class="intro-section">
+    <section id="about" class="about">
+        <div class="container">
             <h2>About Paws & Hearts</h2>
-            <div class="intro-content">
-                <img src="https://picsum.photos/id/237/400/300" alt="A happy black dog looking at the camera" class="intro-img">
-                <div class="intro-text">
-                    <p>
-                        At Paws & Hearts, we are dedicated to bridging the gap between homeless pets and loving families. 
-                        We provide a safe haven for animals in need, offering medical care, rehabilitation, and socialization 
-                        until they find their permanent homes. Our mission is to ensure every pet is treated with dignity 
-                        and every owner feels supported.
-                    </p>
-                    <p>
-                        Whether you are looking to adopt a playful puppy, a calm senior cat, or simply want to learn 
-                        how to better care for your current pet, we are your trusted community resource.
-                    </p>
-                </div>
-            </div>
-        </section>
+            <p>We are a non-profit organization dedicated to rescuing and rehoming abandoned pets. Our mission is to connect loving animals with caring families.</p>
+        </div>
+    </section>
 
-        <!-- Features/Highlights -->
-        <section class="features">
-            <div class="feature-card">
-                <i class="fas fa-home"></i>
-                <h3>Safe Shelter</h3>
-                <p>A warm, clean environment for rehabilitation.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-heartbeat"></i>
-                <h3>Vet Care</h3>
-                <p>Full medical checkups and vaccinations provided.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-users"></i>
-                <h3>Community</h3>
-                <p>Support groups and training for new owners.</p>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-section">
-                <h4>Paws & Hearts</h4>
-                <p>Connecting pets with people since 2015.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="adoption.html">Available Pets</a></li>
-                    <li><a href="contact.html">Volunteer</a></li>
-                    <li><a href="care.html">Care Blog</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Contact Us</h4>
-                <p>123 Puppy Lane, Pet City</p>
-                <p>Email: hello@pawsandhearts.com</p>
+    <section id="pets" class="pets">
+        <div class="container">
+            <h2>Available Pets</h2>
+            <p class="section-subtitle">Meet our wonderful friends waiting for their forever homes</p>
+            <div class="pets-grid" id="petsGrid">
+                <!-- Pets will be loaded by JavaScript -->
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Paws & Hearts. All Rights Reserved.</p>
+    </section>
+
+    <section id="adopt" class="adoption-process">
+        <div class="container">
+            <h2>Adoption Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <h3>Browse Pets</h3>
+                    <p>Look through our available pets and find one that matches your lifestyle</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">2</div>
+                    <h3>Meet & Greet</h3>
+                    <p>Schedule a visit to meet your potential new family member</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <h3>Home Visit</h3>
+                    <p>We ensure your home is ready for your new pet</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">4</div>
+                    <h3>Finalize Adoption</h3>
+                    <p>Complete paperwork and bring your new friend home!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>📍 123 Pet Street, Animal City</p>
+                    <p>📞 (555) 123-PAWS</p>
+                    <p>✉️ info@pawsandhearts.org</p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Paws & Hearts. All rights reserved.</p>
+            <p>Made with 💕 for our furry friends</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
-<script type="module" src="/index.tsx"></script>
 </body>
 </html>
